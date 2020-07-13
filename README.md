@@ -7,8 +7,6 @@ A web stack is a compilation of software applications, often needed for web deve
 
 A web stack is also known as a web application stack.
 
-![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/4/4dec2ba9d84a0a55355b1c1e2de4c57854a2d35a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200713%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200713T124157Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c9138ec5f928d51a96437632c66a396539b39a67cb89628910c4a1c275abb98a)
-
 ### What is Frontend
 
 Frontend is the part of a program or device that a user can directly access. They are all the web design and development technologies that run in the browser and that are responsible for interactivity with users.

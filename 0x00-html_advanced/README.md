@@ -9,12 +9,11 @@
 
 # Sitemap of the project
 
-![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/4/4dec2ba9d84a0a55355b1c1e2de4c57854a2d35a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200713%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200713T124157Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c9138ec5f928d51a96437632c66a396539b39a67cb89628910c4a1c275abb98a)
+![](site.png)
 
 # Wireframe of Techium project
 
-![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/4/3e4f9e2b3cb73d1768229e086f5da35337be5c6c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200713%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200713T124157Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b808a6666243dd5655fc15ac29908ce2b5d251e4e3d0ec91b53349b3d0818868)
-
+![](wireframe.png)
 
 # Tasks
 
@@ -29,12 +28,12 @@ Create your first HTML file 0-index.html with:
 - Add the language tag, specify English for ISO language code and add the direction tag (ltr or rtl) on the html tag.
 - Open your file in your browser (the page should be blank)
 
-W3C won’t pass - you can ignore it
+W3C wonï¿½t pass - you can ignore it
 
 
 **1. Structure your webpage**
 
-File: [1-index.html](1-index.html)
+File: [1-index.html](1-index.html/)
 
 Copy the content of 0-index.html into 1-index.html
 
@@ -42,7 +41,7 @@ Create the head and body sections
 
 - inside the html tag, create the head and body tags (empty) in this order
 
-W3C won’t pass - you can ignore it
+W3C wonï¿½t pass - you can ignore it
 
 
 **2. The head - meta charset, viewport, title, description, favicons**
@@ -50,8 +49,6 @@ W3C won’t pass - you can ignore it
 File: [2-index.html](2-index.html/)
 
 Copy the content of 1-index.html into 2-index.html
-
-![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/11/2ba3a0d7878316de5aaa.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200713%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200713T124157Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=fe3820ef6d0e2210e4b3e1dce001efb81fa9ddb9380f4aa47fc4c0a9460858a0)
 
 Meta charset:
 
@@ -172,7 +169,7 @@ Testimonial articles:
 > -  add 3 article tags
 > > -  inside each article write Testimonial # where the hashtag will be the ordered number (1, 2, or 3)
 
-W3C won’t pass - you can ignore it
+W3C wonï¿½t pass - you can ignore it
 
 
 **7. Navigation**
@@ -214,7 +211,7 @@ Copy the content of 8-index.html into 9-index.html
 - in the section tag with the the text Testimonials section, remove the text and create a level 2 heading with text Testimonials
 - in the section tag with the the text Contact section, remove the text and create a level 2 heading with text Contact
 
-W3C won’t pass - you can ignore it
+W3C wonï¿½t pass - you can ignore it
 
 
 **10. Level 3 headings**
@@ -467,7 +464,7 @@ Copy the content of 20-index.html into 21-index.html
 > - create a link to https://twitter.com/holbertonschool with the text Twitter
 > - create a link to https://www.instagram.com/holbertonschool/ with the text Instagram
 
-W3C won’t pass - you can ignore it
+W3C wonï¿½t pass - you can ignore it
 
 
 **22. "Button" links**
@@ -509,9 +506,9 @@ File: [24-index.html](24-index.html/)
 Copy the content of 23-index.html into 24-index.html
 
 - in the nav
-> - create an unordered list, put each anchor tag (Home, Services, Works, …) as an individual list item
+> - create an unordered list, put each anchor tag (Home, Services, Works, ï¿½) as an individual list item
 - in the div in the footer
-> - create an unordered list and put each anchor tag (Facebook, Twitter, …) as an individual list item
+> - create an unordered list and put each anchor tag (Facebook, Twitter, ï¿½) as an individual list item
 
 W3C does not need to pass
 
@@ -573,7 +570,7 @@ Copy the content of 25-index.html into 27-index.html
 
 - in the footer between the two divs:
 > - add a horizontal rule
-> - after the horizontal rule add a paragraph with text © 2020 Techium, made with ? by students at Holberton School.
+> - after the horizontal rule add a paragraph with text ï¿½ 2020 Techium, made with ? by students at Holberton School.
 
 W3C does not need to pass.
 
@@ -627,7 +624,7 @@ Example of blockquote:
 
 - after the inline quote div, create another div
 > - in the new div add a level 3 heading with the text Blockquote
-> - add a multiline quote with the text I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. and cite Kanye West, Musician
+> - add a multiline quote with the text I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think thatï¿½s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. and cite Kanye West, Musician
 
 
 **31. Address and latest news authors**
@@ -684,7 +681,7 @@ Copy the content of 32-styleguide.html into 33-styleguide.html
 > > - in the section create a header, in the header add a level 2 heading with the text Table
 > > - after the header, create a table, reproduce in HTML the visual below
 
-![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/10/1348f88f2d78a5dee5d0.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200713%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200713T124157Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4a6b1f791374184df6d1d0041b281f49ed7cfac6e5c6651c125b3f85a58c9113)
+![](33pic.jpg)
 
 The <th> tags containing Title, Director, Release Date should have a scope attribute set to col The <th> tags containing the names of the movies should have a scope attribute set to row
 
@@ -717,8 +714,6 @@ Due to earlier task, does not have to pass W3C
 
 File: [35-index.html](35-index.html/)
 
-![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/11/06f32e89f2a82582234e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200713%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200713T124157Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=573b9158549bcdf1cbac85d4dcf4a867b554dbdd07fd25f5f2c178ed9a0f9cf3)
-
 Using 31-index.html
 
 - in header
@@ -726,11 +721,11 @@ Using 31-index.html
 > - replace it with the image above
 > - make sure the image is in the same directory as all of your other files and that the file name is logo-black.png
 > - alt: Techium logo
-> - don’t forget to specify width of 160 and height of 40
+> - donï¿½t forget to specify width of 160 and height of 40
 - in footer, after the opening tag and before the address
 > - insert the logo image
 > - alt: Techium logo
-> - don’t forget to specify the width and height (same as in header)
+> - donï¿½t forget to specify the width and height (same as in header)
 
 W3C does not need to pass
 

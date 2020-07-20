@@ -17,6 +17,7 @@ A Frontend programmer must know [HTML, CSS and JavaScript] codes (HTML, CSS and 
 ## :books: Content
 
 - [0x00-html_advanced](/0x00-html_advanced)
+- [0x01-developer_tools](/0x01-developer_tools)
 
 
 ## :sagittarius: Author

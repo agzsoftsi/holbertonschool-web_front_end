@@ -1,0 +1,25 @@
+/**
+ * 1-style.css
+ *
+ * Task 1 - Description General
+ * When scrolling is triggered on the html element itself, 
+ * we’d like the behavior of the scroll to be as fluid as possible.
+ * Author: Carlos Garcia
+ * Note: Please don't copy, God is watching you
+ * Warning: This code is cursed, jajaja Relax enjoy it
+ */
+
+ /**
+  * Description:
+  * scroll-behavior property specifies the scroll behavior for a scrolled element
+  * auto: The scroll box performs scrolling instantly.
+  * smooth: The box scrolls smoothly, using a time function defined by the user agent 
+  * (user-agent) over a period of time also defined by it. User agents will follow 
+  * the conventions of their own platform, if they exist.
+  * 
+  * Information: https://developer.mozilla.org/es/docs/Web/CSS/scroll-behavior
+  */
+
+html{
+    scroll-behavior: smooth;
+}  

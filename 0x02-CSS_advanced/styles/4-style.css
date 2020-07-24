@@ -1,0 +1,109 @@
+/**
+ * 4-style.css
+ *
+ * Task 4 - Description General
+ * Target the root element, create 2 custom font-family properties font-family-base and font-family-title with the same list of fonts:
+ *  ---- set the first choice font as Helvetica Neue
+ *  ---- set the second choice font as Helvetica
+ *  ---- set the third choice font as Arial
+ *  ---- set the last choice font as sans-serif
+ * Set body‘s font-family to font-family-base
+ * Create a new declaration targeting all 6 levels of section headings, positioned before the links declaration
+ *  ---- set its font-family to font-family-title
+ */
+
+  /**
+  * Description: :root variables
+  * should have their foreground color set to #D73953
+  * Information: https://www.w3schools.com/css/css3_variables.asp
+  * Update 1: Add font variables --font-family-base and --font-family-title
+  */
+
+  :root{
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title:'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+ /**
+  * Description: HTML styles
+  * scroll-behavior property specifies the scroll behavior for a scrolled element
+  * auto: The scroll box performs scrolling instantly.
+  * smooth: The box scrolls smoothly, using a time function defined by the user agent 
+  * (user-agent) over a period of time also defined by it. User agents will follow 
+  * the conventions of their own platform, if they exist.
+  * 
+  * Information: https://developer.mozilla.org/es/docs/Web/CSS/scroll-behavior
+  */
+
+  html{
+    scroll-behavior: smooth;
+}  
+
+  /**
+  * Description: Body Styles
+  * set the foreground color value to #161616
+  * Update 1: change color for Variable --text-color
+  * Update 2: add font-family with Variable --font-family-base
+  */
+
+  body{
+      color: var(--text-color);
+      font-family: var(--font-family-base);
+  }
+ 
+  /**
+  * Description: Headlings Styles
+  * add font-family with Variable --font-family-title
+  */
+
+  h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-family-title); 
+  }
+
+
+  /**
+  * Description: Anchors Styles
+  * set the foreground color value to #161616
+  * Update 1: change color for Variable --text-color
+  */
+
+  a{
+      color: var(--text-color);
+  }
+
+  /**
+  * Description: class visually-hidden Styles
+  * should have their display to none
+  * 
+  */
+
+  .visually-hidden{
+      display: none;
+  }
+
+  /**
+  * Description: class card-category Styles
+  * should have their foreground color set to #D73953
+  * Update 1: change color for Variable --color-primary
+  * 
+  */
+
+  .card-category{
+      color: var(--color-primary);
+  }
+
+  /**
+  * Description: class section-tagline Styles
+  * should have their foreground color set to #D73953
+  * Update 1: change color for Variable --color-primary
+  */
+
+  .section-tagline{
+    color: var(--color-primary);
+}

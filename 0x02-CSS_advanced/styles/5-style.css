@@ -1,15 +1,15 @@
 /**
- * 4-style.css
+ * 5-style.css
  *
- * Task 4 - Description General
- * Target the root element, create 2 custom font-family properties font-family-base and font-family-title with the same list of fonts:
- *  ---- set the first choice font as Helvetica Neue
- *  ---- set the second choice font as Helvetica
- *  ---- set the third choice font as Arial
- *  ---- set the last choice font as sans-serif
- * Set body‘s font-family to font-family-base
- * Create a new declaration targeting all 6 levels of section headings, positioned before the links declaration
- *  ---- set its font-family to font-family-title
+ * Task 5 - Description General
+ * Target the root element, create the following custom properties:
+ *  ---- font-size-small set to 1.2rem
+ *  ---- font-size-medium set to 1.6rem
+ *  ---- font-size-large set to 1.8rem
+ *  ---- font-size-x-large set to 2.3rem
+ *  ---- font-size-xx-large set to 4.8rem
+ * All fonts in the html element should be at 62.5% of their normal size
+ * Any fonts in the body should have their sizes set to font-size-medium
  */
 
   /**

@@ -1,0 +1,541 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+/*# sourceMappingURL=normalize.min.css.map */
+
+/**
+ * 25-style.css
+ *
+ * Add custom properties to the root selector in the css file
+ * -- Name: button-display, Value: inline-block
+ * -- Name: button-padding, Value: 1.5rem 3rem
+ * -- Name: button-border, Value: 0.2rem solid var(--color-primary)
+ * -- Name: button-color, Value: color-black
+ * -- Name: button-text-decoration, Value: none
+ * -- Name: button-font-size, Value: font-size-large
+ * -- Name: button-hover-color, Value: color-white
+ * -- Name: button-hover-text-decoration, Value: none
+ * -- Name: button-hover-background, Value: color-primary
+ *   Add these selectors after the selector for anchor links in active state:
+ *
+ *  Create the button class selector
+ * -- Set the display of the button to the variable button-display
+ * --   Add padding all around with the variable button-padding
+ * --   Style the border with the variable button-border
+ * --   Set the size of fonts to the variable button-font-size
+ * --   Set the foreground color to the variable button-color
+ * --   Decorated text should have the value of the variable button-text-decoration
+ *  Create the hover state of the button class selector
+ *
+ * -- Set the foreground color value to the variable button-hover-color
+ * -- Decorated text should have the value of the variable button-hover-text-decoration
+ * -- Use the value of the variable button-hover-background for the background
+ *   In [data-section-theme="dark"], add the variable
+ * --  Create a custom property button-color pointing to the variable color-white
+ */
+
+  /**
+  * Description: :root variables
+  * should have their foreground color set to #D73953
+  * Information: https://www.w3schools.com/css/css3_variables.asp
+  * Update 1: Add font variables --font-family-base and --font-family-title
+  * Update 2: Add font variables --font-size-xxxx
+  * Update 3: Add font variables --font-weight-xxxx
+  * Update 4: Add new font variables --font-family-xxxx
+  * Update 5: Add Line variables --Line-height-xxxx
+  * Update 6: Add section-header variable
+  * Update 7: Add section-tagline-transform variable
+  * Update 8: Add section-title-xxxx variable
+  * Update 9: Add section-padding, footer, header, body variable
+  * Update 10: Add nav variables
+  * Update 11: Add section-tagline-margin variables
+  */
+
+  :root{
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title:'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-primary);
+    --section-tagline-margin: 0;
+    --button-display: inline-block;
+    --button-padding: 1.5rem 3rem;
+    --button-border: 0.2rem solid var(--color-primary);
+    --button-color: var(--color-black);
+    --button-text-decoration: none;
+    --button-font-size: var(--font-size-large);
+    --button-hover-color: var(--color-white);
+    --button-hover-text-decoration: none;
+    --button-hover-background: var(--color-primary);
+
+}
+
+ /**
+  * Description:  box-sizing
+  * * means "all elements" (a universal selector)
+  * Information: https://developer.mozilla.org/es/docs/Web/CSS/::after
+  */
+
+  *, *::before, *::after{
+      box-sizing: border-box;
+  }
+
+
+ /**
+  * Description: HTML styles
+  * scroll-behavior property specifies the scroll behavior for a scrolled element
+  * auto: The scroll box performs scrolling instantly.
+  * smooth: The box scrolls smoothly, using a time function defined by the user agent 
+  * (user-agent) over a period of time also defined by it. User agents will follow 
+  * the conventions of their own platform, if they exist.
+  * 
+  * Information: https://developer.mozilla.org/es/docs/Web/CSS/scroll-behavior
+  * Update 1: add font-size to 62.5%
+  * 
+  */
+
+
+
+  html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}  
+
+  /**
+  * Description: Body Styles
+  * set the foreground color value to #161616
+  * Update 1: change color for Variable --text-color
+  * Update 2: add font-family with Variable --font-family-base
+  * Update 3: add font-size to font-size-medium
+  * Update 4: add font-weight-regular
+  * Update 5: add line-height-base
+  */
+
+  body{
+      color: var(--text-color);
+      font-family: var(--font-family-base);
+      font-size: var(--font-size-medium);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-base);
+  }
+ 
+  /**
+  * Description: Headlings Styles
+  * add font-family with Variable --font-family-title
+  * Update 1: add font-weight-bold
+  */
+
+  h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-family-title); 
+    font-weight: var(--font-weight-bold);
+  }
+
+
+  /**
+  * Description: Anchors Styles
+  * set the foreground color value to #161616
+  * Update 1: change color for Variable --text-color
+  * Update 2: add text-decoration as none
+  * Update 3: create state link, visited, hover, active
+  */
+
+  a:link{
+      color: var(--text-color);
+      text-decoration: none;
+  }
+
+  a:visited{
+      font-style: italic;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  a:active{
+    background-color: var(--color-light-grey);
+  }
+
+  /**
+  * Description: class .button Styles
+  * button styles
+  * 
+  */
+
+  .button {
+    display: var(--button-display);
+    padding: var(--button-padding);
+    border: var(--button-border);
+    font-size: var(--button-font-size);
+    color: var(--button-color);
+    text-decoration: var(--button-text-decoration);
+  }
+
+  /**
+  * Description: class .button:hover Styles
+  * button styles
+  * 
+  */
+
+  .button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    background: var(--button-hover-background);
+  }
+  
+
+  .visually-hidden{
+    display: none;
+}
+
+  /**
+  * Description: class visually-hidden Styles
+  * should have their display to none
+  * 
+  */
+
+  .visually-hidden{
+      display: none;
+  }
+
+  /**
+  * Description: class card-category Styles
+  * should have their foreground color set to #D73953
+  * Update 1: change color for Variable --color-primary
+  * 
+  */
+
+  .card-category{
+      color: var(--color-primary);
+  }
+
+ /**
+  * Description: class card-title that is inside card-services Styles
+  * add margin
+  */
+
+  .card-services .card-title{
+    margin: 0;
+}
+
+ /**
+  * Description: class a that is inside card-services Styles
+  * add display, padding background
+  */
+
+  .card-services a{
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
+}
+
+ /**
+  * Description: class a:hover that is inside card-services Styles
+  * add margin
+  */
+
+  .card-services a:hover{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
+
+ /**
+  * Description: class section Styles
+  * add padding
+  */
+
+  .section{
+      padding: var(--section-padding);
+  }
+
+  /**
+  * Description: class section-header Styles
+  * Set horizontal alignment of that class with section-header-align
+  * Fuente: https://www.w3schools.com/css/css_align.asp
+  * Update 1: add padding
+  */
+
+  .section-header{
+    text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
+  }
+
+   /**
+  * Description: class section-body Styles
+  * add padding
+  */
+
+  .section-body{
+      padding: var(--section-body-padding);
+
+  }
+
+     /**
+  * Description: class section-footer Styles
+  * add padding and horizontal align
+  */
+
+  .section-footer{
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+
+}
+
+   /**
+  * Description: class section-title Styles
+  * add fonts rules, margin, color
+  */
+
+  .section-title{
+      font-family: var(--font-family-title);
+      font-size: var(--font-size-xx-large);
+      font-weight: var(--font-weight-bold);
+      margin: var(--section-title-margin);
+      color: var(--section-title-color);
+
+  }
+
+    /**
+  * Description: class section-tagline Styles
+  * should have their foreground color set to #D73953
+  * Update 1: change color for Variable --color-primary
+  * Update 2: add  font-family,text-transform,font-weight
+  * Update 3: add  margin
+  */
+
+  .section-tagline{
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+}
+
+   /**
+  * Description: class container Styles
+  * add width, margin left and right as automatic
+  */
+
+  .container{
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  /**
+  * Description: class footer Styles
+  * add padding
+  */
+  .footer{
+      padding: var(--footer-padding);
+  }
+
+  /**
+  * Description: class nav Styles
+  * add padding
+  */
+  .nav{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+   }
+
+  /**
+  * Description: class nav Styles
+  * add padding, margin, list, align
+  */
+  .nav{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+   }
+   
+  /**
+  * Description: class navbar-menu Styles
+  * add padding
+  */
+   .navbar-menu{
+    float: right;
+   }
+
+ /**
+  * Description: class navbar-menu Styles
+  * add float
+  */
+  .navbar-menu{
+    float: right;
+   }
+
+ /**
+  * Description: class nav-item Styles
+  * add fonts rules
+  */
+  .nav .nav-item{
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+   }
+
+  /**
+  * Description: class nav-link Styles
+  * add display and padding
+  */
+  .nav .nav-link{
+    display: block;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+   }
+
+  /**
+  * Description: class nav-link:hover Styles
+  * add color
+  */
+  .nav .nav-link:hover{
+    color: var(--nav-item-link-hover);
+   }
+
+  /**
+  * Description: class ul.row Styles
+  * add margin, padding, list
+  */
+  ul.row{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   }
+
+  /**
+  * Description: class col-1-3 Styles
+  * add width, padding, float
+  * Update 1: remove floar, padding
+  */
+  .col-1-3{
+    width: 33.33%;
+
+   } 
+
+   /**
+  * Description: class col-1-3 Styles
+  * add width, padding, float
+  * Update 1: remove floar, padding
+  */
+  .col-1-2{
+    width: 50%;
+
+   } 
+
+ /**
+  * Description: class footer-copyright Styles
+  * add margin, font, color
+  */
+  .footer-copyright{
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+   } 
+
+   /**
+  * Description: class .footer ul Styles
+  * add text align
+  */
+  .footer ul{
+    text-align: right;
+   }  
+
+  /**
+  * Description: class footer-address Styles
+  * add color text
+  */
+  .footer-address{
+    color: var(--text-color);
+   }  
+
+  /**
+  * Description: class social-link Styles
+  * add alements as block
+  */
+  .social-link{
+    display: block;
+   }  
+
+  /**
+  * Description: class social-link childen svg Styles
+  * add fill color
+  */
+  .social-link > svg{
+    fill: var(--text-color);
+   }  
+
+
+  /**
+  * Description: class row ::after Styles
+  * add content, display, float
+  * information: https://stackoverflow.com/questions/2062258/floating-elements-within-a-div-floats-outside-of-div-why
+  */
+  .row::after {
+    content: none;
+    display: table;
+    clear: both;
+   }
+
+  /**
+  * Description: class start with col- Styles
+  * add float, padding 
+  * information: https://www.w3schools.com/cssref/sel_attr_contain.asp
+  * information: https://www.w3schools.com/cssref/sel_attribute_value.asp
+  * information: https://www.w3schools.com/cssref/sel_attr_end.asp
+  * information:https://www.w3schools.com/cssref/sel_attr_begin.asp
+  * information:https://www.w3schools.com/cssref/sel_attribute_value_lang.asp
+  * information:https://www.w3schools.com/cssref/sel_attribute_value_contains.asp
+  */
+  [class^="col-"] {
+    float: left;
+    padding: 0.5rem;
+    }
+
+  /**
+  * Description: class data-section-theme="dark" Styles
+  * Update 1: redefine text-color, section-title-color, set color-black variables
+  */
+
+  [data-section-theme="dark"]{
+
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+    --button-color: var(--color-white);
+
+    }

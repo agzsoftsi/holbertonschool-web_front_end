@@ -383,6 +383,14 @@
    }  
 
   /**
+  * Description: class footer-address Styles
+  * add color text
+  */
+  .footer-address{
+    color: var(--text-color);
+   }  
+
+  /**
   * Description: class row ::after Styles
   * add content, display, float
   * information: https://stackoverflow.com/questions/2062258/floating-elements-within-a-div-floats-outside-of-div-why

@@ -1,0 +1,75 @@
+/**
+ * 2-style.css
+ *
+ * Task 2 - Description General
+ * For the body, set the foreground color value to #161616
+ * For all anchor elements, set the foreground color value to #161616
+ * All elements with the class visually-hidden should have their display to none
+ * All elements with the class card-category, should have their foreground color set to #D73953
+ * All elements with the class section-tagline should have their foreground color set to #D73953
+ */
+
+ /**
+  * Description: HTML styles
+  * scroll-behavior property specifies the scroll behavior for a scrolled element
+  * auto: The scroll box performs scrolling instantly.
+  * smooth: The box scrolls smoothly, using a time function defined by the user agent 
+  * (user-agent) over a period of time also defined by it. User agents will follow 
+  * the conventions of their own platform, if they exist.
+  * 
+  * Information: https://developer.mozilla.org/es/docs/Web/CSS/scroll-behavior
+  */
+
+  html{
+    scroll-behavior: smooth;
+}  
+
+  /**
+  * Description: Body Styles
+  * set the foreground color value to #161616
+  * 
+  */
+
+  body{
+      color: #161616;
+  }
+
+  /**
+  * Description: Anchors Styles
+  * set the foreground color value to #161616
+  * 
+  */
+
+  a{
+      color: #161616;
+  }
+
+  /**
+  * Description: class visually-hidden Styles
+  * should have their display to none
+  * 
+  */
+
+  .visually-hidden{
+      display: none;
+  }
+
+  /**
+  * Description: class card-category Styles
+  * should have their foreground color set to #D73953
+  * 
+  */
+
+  .card-category{
+      color: #D73953;
+  }
+
+  /**
+  * Description: class section-tagline Styles
+  * should have their foreground color set to #D73953
+  * 
+  */
+
+  .section-tagline{
+    color: #D73953;
+}

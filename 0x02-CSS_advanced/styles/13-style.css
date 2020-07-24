@@ -1,0 +1,183 @@
+/**
+ * 13-style.css
+ *
+ * Task 13 - Description General
+ * Ensure that the declaration targeting anchor elements only targets those containing a hyperlink
+ * Directly after this declaration, target the visited state for the link
+ * --- Italicize the text
+ * Directly after the visited state, target the hover state for the link
+ * --- Decorate the links with an underline when hovering
+ * Decorate the links with an underline when hovering
+ * --- Set the color of the background with the variable color-light-grey
+ */
+
+  /**
+  * Description: :root variables
+  * should have their foreground color set to #D73953
+  * Information: https://www.w3schools.com/css/css3_variables.asp
+  * Update 1: Add font variables --font-family-base and --font-family-title
+  * Update 2: Add font variables --font-size-xxxx
+  * Update 3: Add font variables --font-weight-xxxx
+  * Update 4: Add new font variables --font-family-xxxx
+  * Update 5: Add Line variables --Line-height-xxxx
+  * Update 6: Add section-header variable
+  * Update 7: Add section-tagline-transform variable
+  * Update 8: Add section-title-xxxx variable
+  */
+
+  :root{
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title:'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+}
+
+ /**
+  * Description: HTML styles
+  * scroll-behavior property specifies the scroll behavior for a scrolled element
+  * auto: The scroll box performs scrolling instantly.
+  * smooth: The box scrolls smoothly, using a time function defined by the user agent 
+  * (user-agent) over a period of time also defined by it. User agents will follow 
+  * the conventions of their own platform, if they exist.
+  * 
+  * Information: https://developer.mozilla.org/es/docs/Web/CSS/scroll-behavior
+  * Update 1: add font-size to 62.5%
+  * 
+  */
+
+  html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}  
+
+  /**
+  * Description: Body Styles
+  * set the foreground color value to #161616
+  * Update 1: change color for Variable --text-color
+  * Update 2: add font-family with Variable --font-family-base
+  * Update 3: add font-size to font-size-medium
+  * Update 4: add font-weight-regular
+  * Update 5: add line-height-base
+  */
+
+  body{
+      color: var(--text-color);
+      font-family: var(--font-family-base);
+      font-size: var(--font-size-medium);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-base);
+  }
+ 
+  /**
+  * Description: Headlings Styles
+  * add font-family with Variable --font-family-title
+  * Update 1: add font-weight-bold
+  */
+
+  h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-family-title); 
+    font-weight: var(--font-weight-bold);
+  }
+
+
+  /**
+  * Description: Anchors Styles
+  * set the foreground color value to #161616
+  * Update 1: change color for Variable --text-color
+  * Update 2: add text-decoration as none
+  * Update 3: create state link, visited, hover, active
+  */
+
+  a:link{
+      color: var(--text-color);
+      text-decoration: none;
+  }
+
+  a:visited{
+      font-style: italic;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  a:active{
+    background-color: var(--color-light-grey);
+  }
+
+  /**
+  * Description: class visually-hidden Styles
+  * should have their display to none
+  * 
+  */
+
+  .visually-hidden{
+      display: none;
+  }
+
+  /**
+  * Description: class card-category Styles
+  * should have their foreground color set to #D73953
+  * Update 1: change color for Variable --color-primary
+  * 
+  */
+
+  .card-category{
+      color: var(--color-primary);
+  }
+
+  /**
+  * Description: class section-header Styles
+  * Set horizontal alignment of that class with section-header-align
+  * Fuente: https://www.w3schools.com/css/css_align.asp
+  */
+
+  .section-header{
+    text-align: var(--section-header-align);
+  }
+
+   /**
+  * Description: class section-title Styles
+  * add fonts rules, margin, color
+  */
+
+  .section-title{
+      font-family: var(--font-family-title);
+      font-size: var(--font-size-xx-large);
+      font-weight: var(--font-weight-bold);
+      margin: var(--section-title-margin);
+      color: var(--section-title-color);
+
+  }
+
+    /**
+  * Description: class section-tagline Styles
+  * should have their foreground color set to #D73953
+  * Update 1: change color for Variable --color-primary
+  * Update 2: add  font-family,text-transform,font-weight
+  */
+
+  .section-tagline{
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+}

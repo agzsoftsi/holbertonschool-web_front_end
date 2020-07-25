@@ -54,7 +54,7 @@
   * Information: https://developer.mozilla.org/es/docs/Web/CSS/::after
   */
 
-  html::before{
+  *, *:before, *:after{
       box-sizing: border-box;
   }
 

@@ -206,10 +206,6 @@
   }
   
 
-  .visually-hidden{
-    display: none;
-}
-
   /**
   * Description: class visually-hidden Styles
   * should have their display to none
@@ -411,30 +407,12 @@
     text-align: center;
    }
 
-  /**
-  * Description: class nav Styles
-  * add padding, margin, list, align
-  */
-  .nav{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-   }
    
   /**
   * Description: class navbar-menu Styles
   * add padding
   */
    .navbar-menu{
-    float: right;
-   }
-
- /**
-  * Description: class navbar-menu Styles
-  * add float
-  */
-  .navbar-menu{
     float: right;
    }
 
@@ -464,7 +442,7 @@
   * Description: class nav-link:hover Styles
   * add color
   */
-  .nav .nav-link:hover{
+  .nav.nav-link:hover{
     color: var(--nav-item-link-hover);
    }
 
@@ -562,7 +540,7 @@
   * information: https://stackoverflow.com/questions/2062258/floating-elements-within-a-div-floats-outside-of-div-why
   */
   .row::after {
-    content: none;
+    content: "";
     display: table;
     clear: both;
    }

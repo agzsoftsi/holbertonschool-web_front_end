@@ -288,8 +288,8 @@
   * add padding, margin, list, align
   */
   .nav{
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
     text-align: center;
    }

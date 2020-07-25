@@ -283,17 +283,6 @@
 
   /**
   * Description: class nav Styles
-  * add padding
-  */
-  .nav{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-   }
-
-  /**
-  * Description: class nav Styles
   * add padding, margin, list, align
   */
   .nav{
@@ -303,14 +292,6 @@
     text-align: center;
    }
    
-  /**
-  * Description: class navbar-menu Styles
-  * add padding
-  */
-   .navbar-menu{
-    float: right;
-   }
-
  /**
   * Description: class navbar-menu Styles
   * add float

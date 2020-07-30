@@ -1,1 +1,16 @@
 /* 0. Always debugging! - Write a Sass file that prints Hello world in the debug output. */
+h1 {
+    font-size: 20px;
+    @media screen and (max-width: 960px){
+        font-size: 18px;
+    }
+    @media screen and (max-width: 640px){
+        font-size: 16px;
+    }
+    @media screen and (max-width: 320px){
+        font-size: 14px;
+        &.small {
+            color: #1D1D1D;
+        }
+    }
+  }

@@ -1,1 +1,6 @@
-/* 0. Always debugging! - Write a Sass file that prints Hello world in the debug output. */
+/* 4. Nested class - Write a Sass file that assigns:You must use nested declarations */
+body {
+    color: #3D3D3D;
+    .red {
+        color: #FF0000; }
+     }

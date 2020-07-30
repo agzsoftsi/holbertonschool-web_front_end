@@ -1,1 +1,12 @@
-/* 0. Always debugging! - Write a Sass file that prints Hello world in the debug output. */
+/* 2. Colors - Write a Sass file that assigns:  you must use 2 Sass variables */
+$color-text-var:#3D3D3D;
+$background-color-var:#6D6D6D;
+body {
+    color: $color-text-var;
+    background-color: $background-color-var; }
+  
+  p {
+    color: $color-text-var; }
+  
+  h2 {
+    background-color: $background-color-var; }

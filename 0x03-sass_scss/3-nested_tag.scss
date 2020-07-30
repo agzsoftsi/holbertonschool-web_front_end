@@ -1,13 +1,7 @@
-/* 2. Colors - Write a Sass file that assigns:  you must use 2 Sass variables */
-$color-text-var:#3D3D3D;
-$background-color-var:#6D6D6D;
-
+/* Nested tag - Write a Sass file that assigns: You must use nested declarations */
 body {
-    color: $color-text-var;
-    background-color: $background-color-var; }
-  
-  p {
-    color: $color-text-var; }
-  
-  h2 {
-    background-color: $background-color-var; }
+    margin: 0px;
+    padding: 0px; 
+    p {
+        margin: 10px; }
+}

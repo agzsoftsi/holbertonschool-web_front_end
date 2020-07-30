@@ -1,1 +1,11 @@
-/* 0. Always debugging! - Write a Sass file that prints Hello world in the debug output. */
+/* 9. Extended - Write a Sass file that assigns: */
+.info{
+    font-size: 12px; }
+  
+.success {
+    @extend .info;
+    color: #00FF00; }
+  
+.warning {
+    @extend .info;
+    color: #FF0000; }

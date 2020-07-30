@@ -1,1 +1,10 @@
-/* 0. Always debugging! - Write a Sass file that prints Hello world in the debug output. */
+/* 10. Import colors - You must use @import */
+@import "10-colors.scss";
+.red {
+    color: $red; }
+  
+.green {
+    color: $green; }
+  
+.blue {
+    color: $blue; }

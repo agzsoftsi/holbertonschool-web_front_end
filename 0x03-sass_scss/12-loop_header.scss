@@ -1,1 +1,6 @@
-/* 0. Always debugging! - Write a Sass file that prints Hello world in the debug output. */
+/* 12. Loop Headers - You must create H* tags from 1 to 5, You must use @for statement */
+@for $i from 1 through 6 {
+    h#{$i} {
+      font-size: #{$i}px;
+    }
+  }

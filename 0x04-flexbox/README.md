@@ -1416,7 +1416,7 @@ Inside the post-content article
 
 - Add another paragraph
 > - Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed haec omittamus; Hoc Hieronymus summum bonum esse dixit. Duo Reges: constructio interrete.
-> > -You should wrap the following text with a <b> tag: Hoc Hieronymus summum bonum esse dixit.
+> > - You should wrap the following text with a <b> tag: Hoc Hieronymus summum bonum esse dixit.
 
 - Add a heading level 2
 > - Text: Prioris generis est docilitas, memoria

@@ -44,4 +44,4 @@ for (let j = 1; j < 101; j++){
 }
 let endCountPrimeNumbers = window.performance.now();
 
-console.log("Execution time of printing countPrimeNumbers was " + (endCountPrimeNumbers - startCountPrimeNumbers) + " milliseconds.");
+console.log("Execution time of calculating prime numbers 100 times was " + (endCountPrimeNumbers - startCountPrimeNumbers) + " milliseconds.");

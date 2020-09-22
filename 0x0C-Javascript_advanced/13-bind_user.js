@@ -20,4 +20,5 @@ console.log(welcomeString + ', ' + this.firstName + '. Your occupation is: ' + t
 }
 
 let bindLogWelcomeUser = logWelcomeUser.bind(user);
+bindLogWelcomeUser('Welcome');
 bindLogWelcomeUser('Hello');

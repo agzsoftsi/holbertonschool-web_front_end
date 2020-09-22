@@ -41,4 +41,4 @@ let startCountPrimeNumbers = window.performance.now();
 countPrimeNumbers();
 let endCountPrimeNumbers = window.performance.now();
 
-console.log("Execution time of printing countPrimeNumbers was " + (endCountPrimeNumber - startCountPrimeNumbers) + " milliseconds.");
+console.log("Execution time of printing countPrimeNumbers was " + (endCountPrimeNumbers - startCountPrimeNumbers) + " milliseconds.");

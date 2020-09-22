@@ -1,5 +1,5 @@
 /**
-  * @description - Task 10
+  * @description - Task 11
   * @function countPrimeNumbers - Count the number of primes from 2 to 100 100 times
   * @returns {Number} number of primes
   */

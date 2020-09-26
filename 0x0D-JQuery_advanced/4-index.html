@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <!-- JQuery 3.5.1 -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+        <!-- JQuery 3.5.1 -->
+        <script type="application/javascript">
+           function createFamilyTree () {
+            $('body').append('<table></table>'),
+            $('table').append('<thead></thead>'),
+            $('thead').append('<tr></tr>'),
+            $('thead > tr').append('<th></th>'),
+            $('thead > tr > th').text('Firstname'),
+            $('thead > tr').append('<th></th>'),
+            $('thead > tr > th:nth-child(2)').text('Lastname'),
+            $('table').append('<tbody></tbody>'),
+            $('tbody').append('<tr></tr>'),
+            $('tbody').append('<tr></tr>'),
+            $('tbody').append('<tr></tr>'),
+            $('tbody > tr:nth-child(1)').append('<td></td>'),
+            $('tbody > tr:nth-child(1)').append('<td></td>'),
+            $('tbody > tr:nth-child(2)').append('<td></td>'),
+            $('tbody > tr:nth-child(2)').append('<td></td>'),
+            $('tbody > tr:nth-child(3)').append('<td></td>'),
+            $('tbody > tr:nth-child(3)').append('<td></td>'),
+            $('tbody > tr:nth-child(1) > td:first').text('Guillaume'),
+            $('tbody > tr:nth-child(1) > td:last').text('Salva'),
+            $('tbody > tr:nth-child(2) > td:first').text('Paulette'),
+            $('tbody > tr:nth-child(2) > td:last').text('Salva'),
+            $('tbody > tr:nth-child(3) > td:first').text('Antoine'),
+            $('tbody > tr:nth-child(3) > td:last').text('Salva');
+
+           };
+
+           function replaceFamilyTree () {
+            $('tbody').replaceWith(`<tbody><tr><td>Gerard</td><td>Bonissa</td></tr></tbody>`);
+            };
+
+            $(function () {
+                createFamilyTree();
+                replaceFamilyTree();
+            });
+        </script>
+
+        <title>Task 4</title>
+
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

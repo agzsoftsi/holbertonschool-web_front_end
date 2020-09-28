@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <!-- JQuery 3.5.1 SLIM-->
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script> -->
+
+        <!-- JQuery 3.5.1 COMPLETE -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+        <!-- Query - Setup your dev environment  -->
+        <script type="application/javascript">
+            function createSearchForm () {
+                        $('body').append('<input type="text" id="search"></input>', '<input type="submit" id="submit-btn"></input>','<ul></ul>');
+                        $('#submit-btn').click(function () {
+                        const query = $('#search').val();
+                        queryWikipedia(query);
+                        });
+                    }
+
+            function addNewArticle (id, title, snippet) {
+                        $('ul').append('<li></li>');
+                        $('ul > li:last').append(`<p><span>${id} - <b>${title}</b></span></p>`, `<p>${snippet}</p>`);
+                    }
+
+            function queryWikipedia (search) { $.get('https://en.wikipedia.org/w/api.php', {
+                        action: 'query', list: 'search', srsearch: search, format: 'json', origin: '*'}).done(function (data) {
+                            data.query.search.forEach(function (item) {
+                            addNewArticle(item.pageid, item.title, item.snippet);
+                            })
+                        })
+                    }
+
+            $(document).ready(createSearchForm);
+        </script>
+
+        <title>Task 7</title>
+
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
